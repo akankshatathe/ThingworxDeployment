@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ majorVersion="9"
+ minorVersion="4"
+ universal="password">
+    <Things>
+        <Thing
+         description=""
+         documentationContent=""
+         effectiveThingPackage="ConfiguredThing"
+         enabled="true"
+         homeMashup=""
+         identifier=""
+         inheritedValueStream=""
+         name="Cummins.LandingPageThing"
+         projectName="Cummins.LandingPageProject"
+         published="false"
+         tags=""
+         thingTemplate="GenericThing"
+         valueStream="">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions></RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility></Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+            <ThingShape>
+                <PropertyDefinitions>
+                    <PropertyDefinition
+                     aspect.cacheTime="0.0"
+                     aspect.dataChangeType="VALUE"
+                     aspect.dataShape="Cummins.LandingPageAppEntryDS"
+                     aspect.defaultValue="{&quot;rows&quot;:[{&quot;Active&quot;:true,&quot;AppIcon&quot;:&quot;Cummins.GlobalSearchAppIcon&quot;,&quot;AppTooltip&quot;:&quot;Perform search in all Windchill Instances&quot;,&quot;AppTargetMashup&quot;:&quot;Cummins.GlobalWindchillSearch.MainSearchMashup&quot;,&quot;AppName&quot;:&quot;Global Search&quot;},{&quot;Active&quot;:true,&quot;AppIcon&quot;:&quot;Cummins.LicenseManagerAppLogo&quot;,&quot;AppTooltip&quot;:&quot;Perform License Management Utilities On All Windchill Instances&quot;,&quot;AppTargetMashup&quot;:&quot;Cummins.LicenseManagerMashup&quot;,&quot;AppName&quot;:&quot;License Manager&quot;},{&quot;Active&quot;:true,&quot;AppIcon&quot;:&quot;Cummins.BoMComparisonLog0&quot;,&quot;AppTooltip&quot;:&quot;Compare 2 BoMs&quot;,&quot;AppTargetMashup&quot;:&quot;Cummins.BoMComparisonMashup&quot;,&quot;AppName&quot;:&quot;BoM Comparison&quot;}],&quot;dataShape&quot;:{&quot;fieldDefinitions&quot;:{&quot;Active&quot;:{&quot;name&quot;:&quot;Active&quot;,&quot;aspects&quot;:{&quot;isPrimaryKey&quot;:false},&quot;description&quot;:&quot;&quot;,&quot;baseType&quot;:&quot;BOOLEAN&quot;,&quot;ordinal&quot;:5},&quot;AppIcon&quot;:{&quot;name&quot;:&quot;AppIcon&quot;,&quot;aspects&quot;:{&quot;isPrimaryKey&quot;:false},&quot;description&quot;:&quot;&quot;,&quot;baseType&quot;:&quot;IMAGELINK&quot;,&quot;ordinal&quot;:3},&quot;AppTooltip&quot;:{&quot;name&quot;:&quot;AppTooltip&quot;,&quot;aspects&quot;:{&quot;isPrimaryKey&quot;:false},&quot;description&quot;:&quot;&quot;,&quot;baseType&quot;:&quot;STRING&quot;,&quot;ordinal&quot;:2},&quot;AppTargetMashup&quot;:{&quot;name&quot;:&quot;AppTargetMashup&quot;,&quot;aspects&quot;:{&quot;isPrimaryKey&quot;:false},&quot;description&quot;:&quot;&quot;,&quot;baseType&quot;:&quot;STRING&quot;,&quot;ordinal&quot;:4},&quot;AppName&quot;:{&quot;name&quot;:&quot;AppName&quot;,&quot;aspects&quot;:{&quot;isPrimaryKey&quot;:false},&quot;description&quot;:&quot;&quot;,&quot;baseType&quot;:&quot;STRING&quot;,&quot;ordinal&quot;:1}}}}"
+                     aspect.isIndexed="false"
+                     aspect.isPersistent="true"
+                     baseType="INFOTABLE"
+                     category=""
+                     description=""
+                     isLocalOnly="false"
+                     name="LandingPageAppsList_V1"
+                     ordinal="2"></PropertyDefinition>
+                </PropertyDefinitions>
+                <ServiceDefinitions>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="assignMemberToUserGroup">
+                        <ResultType
+                         baseType="STRING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions>
+                            <FieldDefinition
+                             baseType="STRING"
+                             description=""
+                             name="loggedInUser"
+                             ordinal="1"></FieldDefinition>
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="assignMemberToUserGroupTest">
+                        <ResultType
+                         baseType="STRING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions>
+                            <FieldDefinition
+                             baseType="STRING"
+                             description=""
+                             name="loggedInUser"
+                             ordinal="1"></FieldDefinition>
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="getAllAppEntries">
+                        <ResultType
+                         aspect.dataShape="Cummins.LandingPageAppEntryDS"
+                         baseType="INFOTABLE"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions>
+                            <FieldDefinition
+                             baseType="STRING"
+                             description=""
+                             name="loggedInUser"
+                             ordinal="1"></FieldDefinition>
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="getAppNames">
+                        <ResultType
+                         aspect.dataShape="Cummins.LandingPageAppEntryDS"
+                         baseType="INFOTABLE"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions>
+                            <FieldDefinition
+                             aspect.dataShape="LandingPage.GroupsAccessDS"
+                             baseType="INFOTABLE"
+                             description=""
+                             name="userGroupTable"
+                             ordinal="1"></FieldDefinition>
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="test">
+                        <ResultType
+                         aspect.dataShape="Cummins.LandingPageAppEntryDS"
+                         baseType="STRING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions>
+                            <FieldDefinition
+                             baseType="DATETIME"
+                             description=""
+                             name="dateValue"
+                             ordinal="1"></FieldDefinition>
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                </ServiceDefinitions>
+                <EventDefinitions></EventDefinitions>
+                <ServiceMappings></ServiceMappings>
+                <ServiceImplementations>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="assignMemberToUserGroup">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             dataShapeName=""
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        try {
+                                        	var result;
+                                        	var doesUserExists;
+                                        	// result: STRING
+                                        	//var User = Resources["CurrentSessionInfo"].GetCurrentUser();
+                                            
+                                           var User = loggedInUser;
+                                        
+                                        	// result: INFOTABLE dataShape: "GroupMember"
+                                        	var userGroupMembersList = Groups["All Users"].GetGroupMembers();
+                                        
+                                        	if (userGroupMembersList.length > 0) {
+                                        		for (var i = 0; i < userGroupMembersList.rows.length; i++) {
+                                        			var row = userGroupMembersList.rows[i];
+                                        			if (User == row.name) {
+                                        				doesUserExists = true;
+                                        				result = User + ' already exists in All Users Group';
+                                        				break;
+                                        			} else {
+                                        				Groups["All Users"].AddMember({
+                                        					member: User /* STRING */ ,
+                                        					type: 'User' /* STRING */
+                                        				});
+                                        
+                                        				result = User + ' added succesfully';
+                                        			}
+                                        		}
+                                        	} else {
+                                        		Groups["All Users"].AddMember({
+                                        			member:  User /* STRING User */ ,
+                                        			type: 'User' /* STRING */
+                                        		});
+                                        
+                                        		result = User + ' added succesfully';
+                                        	}
+                                        } catch (e) {
+                                        	logger.error(e);
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="assignMemberToUserGroupTest">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             dataShapeName=""
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        try {
+                                        	var result;
+                                        	var doesUserExists;
+                                        	// result: STRING
+                                        	var User = Resources["CurrentSessionInfo"].GetCurrentUser();
+                                        
+                                        	//var User = loggedInUser;
+                                        
+                                        	// result: INFOTABLE dataShape: "GroupMember"
+                                        	var userGroupMembersList = Groups["All Users"].GetGroupMembers();
+                                        	if (userGroupMembersList.length > 0) {
+                                            var params = {
+                                                fieldName: 'name' /* STRING */,
+                                                isCaseSensitive: undefined /* BOOLEAN {"defaultValue":false} */,
+                                                t: userGroupMembersList /* INFOTABLE */,
+                                                value: User /* STRING */
+                                            };
+                                        
+                                            // result: INFOTABLE
+                                            inforesult = Resources["InfoTableFunctions"].EQFilter(params);
+                                              
+                                                if(inforesult.rows.length > 0)
+                                                {
+                                                	result = User + ' already exists in All Users group';
+                                                }
+                                                else
+                                                {
+                                                	Groups["All Users"].AddMember({
+                                        			member: User /* STRING User */ ,
+                                        			type: 'User' /* STRING */
+                                        		});
+                                        
+                                        		result = User + ' added succesfully';
+                                                }
+                                        	} else {
+                                        		Groups["All Users"].AddMember({
+                                        			member: User /* STRING User */ ,
+                                        			type: 'User' /* STRING */
+                                        		});
+                                        
+                                        		result = User + ' added succesfully';
+                                        	}
+                                        } catch (e) {
+                                        	logger.error(e);
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="getAllAppEntries">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             dataShapeName=""
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        try
+                                        {
+                                        // CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(LandingPage.GroupsAccessDS)
+                                        var inforesult = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape({
+                                        	infoTableName: "InfoTable",
+                                        	dataShapeName: "LandingPage.GroupsAccessDS"
+                                        });
+                                        var result;
+                                        var userGroups = Resources["CurrentSessionInfo"].GetCurrentUserGroups();
+                                        //result = userGroups;
+                                        // result: INFOTABLE dataShape: ""
+                                        var data = Things["LandingPage.GroupAccessDataTable"].GetDataTableEntries({
+                                        	maxItems: undefined /* NUMBER {"defaultValue":500} */
+                                        });
+                                        
+                                        if (userGroups.rows.length > 0) {
+                                        	for (var i = 0; i < userGroups.rows.length; i++) {
+                                        		// Define the filter for the "like" query GroupName
+                                        		var filter = {
+                                        			"filters": {
+                                        				"type": "EQ",
+                                        				"fieldName": "GroupName", // Replace with the field name you want to query
+                                        				"value": userGroups.rows[i].name // Replace 'searchValue' with the pattern you are looking for
+                                        			}
+                                        		};
+                                        	//logger.warn(userGroups.rows[i].name);
+                                        		// Execute the QueryDataTableEntries service
+                                        		var params = {
+                                        			maxItems: 100, // Optional: Set a limit for the number of results
+                                        			query: filter
+                                        		};
+                                        
+                                        		 table = Things["LandingPage.GroupAccessDataTable"].QueryDataTableEntries(params);
+                                                
+                                                var newEntry = new Object();
+                                           		for(var j =0; j<table.rows.length; j++)
+                                                {
+                                        		newEntry.GroupName = table.rows[j].GroupName;
+                                        		newEntry.AppsAccess = table.rows[j].AppsAccess;
+                                        		inforesult.AddRow(newEntry);
+                                                }
+                                                
+                                        	}
+                                           // result = inforesult;
+                                              // result: INFOTABLE dataShape: "Cummins.LandingPageAppEntryDS"
+                                         result = me.getAppNames({
+                                        	userGroupTable: inforesult /* INFOTABLE {"dataShape":"LandingPage.GroupsAccessDS"} */
+                                        });
+                                          
+                                        }
+                                        
+                                        else
+                                        {
+                                        	// result: INFOTABLE dataShape: ""
+                                         inforesult = Things["LandingPage.GroupAccessDataTable"].GetDataTableEntryByKey({
+                                        	key: GroupName /* STRING */
+                                        });
+                                            
+                                            //result = inforesult;
+                                        
+                                            result = me.getAppNames({
+                                        	userGroupTable: inforesult /* INFOTABLE {"dataShape":"LandingPage.GroupsAccessDS"} */
+                                        });
+                                        }
+                                         //result = table;
+                                        }
+                                        
+                                        catch(e)
+                                        {
+                                        	logger.error(e);
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="getAppNames">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             dataShapeName=""
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        try {
+                                        	// CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(Cummins.LandingPageAppEntryDS)
+                                        	var inforesult = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape({
+                                        		infoTableName: "InfoTable",
+                                        		dataShapeName: "Cummins.LandingPageAppEntryDS"
+                                        	});
+                                        	var List = [];
+                                        	var LandingPageAppsList = me.LandingPageAppsList_V1;
+                                        	if (userGroupTable.length > 0) {
+                                        		for (var i = 0; i < userGroupTable.length; i++) {
+                                        			var appNames = userGroupTable.rows[i].AppsAccess;
+                                        			if (appNames.includes(',')) {
+                                        				var appList = appNames.split(",");
+                                        				for (var k = 0; k < appList.length; k++) {
+                                        					List.push(appList[k].trim());
+                                        				}
+                                        			} else {
+                                        				List.push(appNames.trim());
+                                        			}
+                                        		}
+                                        	}
+                                        
+                                        	for (var j = 0; j < LandingPageAppsList.rows.length; j++) {
+                                        		var row = LandingPageAppsList.rows[j];
+                                        		var appName = row.AppName;
+                                        		if (List.indexOf(appName) !== -1) {
+                                        			inforesult.AddRow(row);
+                                        		}
+                                        	}
+                                        	result = inforesult;
+                                        } catch (e) {
+                                        	logger.error(e);
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="test">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             dataShapeName=""
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        try { 
+                                            // CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(Cummins.LandingPageAppEntryDS)
+                                        //var isoString = "2025-06-18T09:52:15.899Z";
+                                        
+                                        // dateValue:DATETIME
+                                        //let dateValue = new Date();
+                                        
+                                        // dateFormat(dateValue:DATETIME, dateFormat:STRING):STRING  "yyyy-MM-dd'T'HH:mm:ssZ"
+                                        let formattedDate = dateFormat(dateValue, "yyyy-MM-dd");
+                                        
+                                        var result = formattedDate;
+                                        // Convert string to Date object
+                                        //var dateObj = new Date(isoString);
+                                        //
+                                        //// date1:DATETIME
+                                        //var date1 = new Date();
+                                        //
+                                        //// dateDifference(date1:DATETIME, date2:DATETIME):NUMBER
+                                        //var difference = dateDifference(date1, dateObj);
+                                        
+                                        
+                                        //    logger.error('current date:' + date1);
+                                        //    logger.error('input date:' + dateObj);
+                                         
+                                        } catch (e) {
+                                        	logger.error(e);
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                </ServiceImplementations>
+                <Subscriptions>
+                    <Subscription
+                     aspect.isDistributed="false"
+                     description=""
+                     enabled="true"
+                     eventName="LoginSucceeded"
+                     name="loginCheck"
+                     source="SecurityMonitor"
+                     sourceProperty=""
+                     sourceType="Thing">
+                        <ServiceImplementation
+                         description=""
+                         handlerName="Script"
+                         name="loginCheck">
+                            <ConfigurationTables>
+                                <ConfigurationTable
+                                 dataShapeName=""
+                                 description=""
+                                 isMultiRow="false"
+                                 name="Script"
+                                 ordinal="0">
+                                    <DataShape>
+                                        <FieldDefinitions>
+                                            <FieldDefinition
+                                             baseType="STRING"
+                                             description="code"
+                                             name="code"
+                                             ordinal="0"></FieldDefinition>
+                                        </FieldDefinitions>
+                                    </DataShape>
+                                    <Rows>
+                                        <Row>
+                                            <code>
+                                            <![CDATA[
+                                            try {
+                                            	var result;
+                                            	var doesUserExists;
+                                            	// result: INFOTABLE dataShape: "GroupMember"
+                                            	var userGroupMembersList = Groups["All Users"].GetGroupMembers();
+                                            	if (userGroupMembersList.length > 0) {
+                                            		var params = {
+                                            			fieldName: 'name' /* STRING */ ,
+                                            			isCaseSensitive: undefined /* BOOLEAN {"defaultValue":false} */ ,
+                                            			t: userGroupMembersList /* INFOTABLE */ ,
+                                            			value: eventData.user /* STRING */
+                                            		};
+                                            		// result: INFOTABLE
+                                            		inforesult = Resources["InfoTableFunctions"].EQFilter(params);
+                                            
+                                            		if (inforesult.rows.length > 0) {
+                                            			logger.warn(eventData.user + ' already exists in All Users group');
+                                            		} else {
+                                            			Groups["All Users"].AddMember({
+                                            				member: eventData.user /* STRING User */ ,
+                                            				type: 'User' /* STRING */
+                                            			});
+                                            			logger.warn(eventData.user + ' added succesfully');
+                                            //             Users[eventData.user].SetHomeMashup({
+                                            //        name: 'Cummins.LandingPageMashup_v1' /* MASHUPNAME */
+                                            //    });
+                                            		}
+                                            	} else {
+                                            		Groups["All Users"].AddMember({
+                                            			member: eventData.user /* STRING User */ ,
+                                            			type: 'User' /* STRING */
+                                            		});
+                                            		logger.warn(eventData.user + ' added succesfully');
+                                            //        Users[eventData.user].SetHomeMashup({
+                                            //        name: 'Cummins.LandingPageMashup_v1' /* MASHUPNAME */
+                                            //    });
+                                            	}
+                                            } catch (e) {
+                                            	logger.error(e);
+                                            }
+                                            ]]>
+                                            </code>
+                                        </Row>
+                                    </Rows>
+                                </ConfigurationTable>
+                            </ConfigurationTables>
+                        </ServiceImplementation>
+                    </Subscription>
+                    <Subscription
+                     aspect.isDistributed="false"
+                     description=""
+                     enabled="true"
+                     eventName="LoginSucceeded"
+                     name="setHomeMashup"
+                     source="SecurityMonitor"
+                     sourceProperty=""
+                     sourceType="Thing">
+                        <ServiceImplementation
+                         description=""
+                         handlerName="Script"
+                         name="setHomeMashup">
+                            <ConfigurationTables>
+                                <ConfigurationTable
+                                 dataShapeName=""
+                                 description=""
+                                 isMultiRow="false"
+                                 name="Script"
+                                 ordinal="0">
+                                    <DataShape>
+                                        <FieldDefinitions>
+                                            <FieldDefinition
+                                             baseType="STRING"
+                                             description="code"
+                                             name="code"
+                                             ordinal="0"></FieldDefinition>
+                                        </FieldDefinitions>
+                                    </DataShape>
+                                    <Rows>
+                                        <Row>
+                                            <code>
+                                            <![CDATA[
+                                            try { // CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(Cummins.LandingPageAppEntryDS)
+                                            var User;
+                                            var count;
+                                            	// result: INFOTABLE dataShape: "GroupMember"
+                                            var groupMemberList = Groups["All Users"].GetGroupMembers();
+                                            //
+                                            //// result: STRING
+                                            //User = Resources["CurrentSessionInfo"].GetCurrentUser();
+                                             
+                                            var params = {
+                                            	fieldName: 'name' /* STRING */,
+                                            	isCaseSensitive: undefined /* BOOLEAN {"defaultValue":false} */,
+                                            	t: groupMemberList /* INFOTABLE */,
+                                            	value: eventData.user /* STRING */
+                                            };
+                                            
+                                            // result: INFOTABLE
+                                            var inforesult = Resources["InfoTableFunctions"].EQFilter(params);
+                                            count = inforesult.rows.length;
+                                            if(count > 0)
+                                            {
+                                            Users[eventData.user].SetHomeMashup({
+                                            	name: 'Cummins.LandingPageMashup_v1' /* MASHUPNAME */
+                                            });	
+                                                logger.warn('Success');
+                                            }
+                                            else
+                                            {
+                                                  logger.warn('Fail');
+                                            }
+                                                
+                                            
+                                               
+                                            } catch (e) {
+                                            	logger.error(e);
+                                            }
+                                            ]]>
+                                            </code>
+                                        </Row>
+                                    </Rows>
+                                </ConfigurationTable>
+                            </ConfigurationTables>
+                        </ServiceImplementation>
+                    </Subscription>
+                </Subscriptions>
+            </ThingShape>
+            <PropertyBindings></PropertyBindings>
+            <RemotePropertyBindings></RemotePropertyBindings>
+            <RemoteServiceBindings></RemoteServiceBindings>
+            <RemoteEventBindings></RemoteEventBindings>
+            <AlertConfigurations>
+                <AlertDefinitions
+                 name="LandingPageAppsList_V1"></AlertDefinitions>
+            </AlertConfigurations>
+            <ImplementedShapes></ImplementedShapes>
+            <ThingProperties>
+                <LandingPageAppsList_V1>
+                    <Value>
+                        <infoTable>
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     aspect.isPrimaryKey="false"
+                                     baseType="BOOLEAN"
+                                     description=""
+                                     name="Active"
+                                     ordinal="0"></FieldDefinition>
+                                    <FieldDefinition
+                                     aspect.isPrimaryKey="false"
+                                     baseType="IMAGELINK"
+                                     description=""
+                                     name="AppIcon"
+                                     ordinal="0"></FieldDefinition>
+                                    <FieldDefinition
+                                     aspect.isPrimaryKey="false"
+                                     baseType="STRING"
+                                     description=""
+                                     name="AppName"
+                                     ordinal="0"></FieldDefinition>
+                                    <FieldDefinition
+                                     aspect.isPrimaryKey="false"
+                                     baseType="STRING"
+                                     description=""
+                                     name="AppTargetMashup"
+                                     ordinal="0"></FieldDefinition>
+                                    <FieldDefinition
+                                     aspect.isPrimaryKey="false"
+                                     baseType="STRING"
+                                     description=""
+                                     name="AppTooltip"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <Active>true</Active>
+                                    <AppIcon>
+                                    <![CDATA[
+                                    Cummins.GlobalSearchAppIcon
+                                    ]]>
+                                    </AppIcon>
+                                    <AppName>
+                                    <![CDATA[
+                                    Global Search
+                                    ]]>
+                                    </AppName>
+                                    <AppTargetMashup>
+                                    <![CDATA[
+                                    Cummins.GlobalWindchillSearch.MainSearchMashup
+                                    ]]>
+                                    </AppTargetMashup>
+                                    <AppTooltip>
+                                    <![CDATA[
+                                    Perform search in all Windchill Instances
+                                    ]]>
+                                    </AppTooltip>
+                                </Row>
+                                <Row>
+                                    <Active>true</Active>
+                                    <AppIcon>
+                                    <![CDATA[
+                                    Cummins.LicenseManagerAppLogo
+                                    ]]>
+                                    </AppIcon>
+                                    <AppName>
+                                    <![CDATA[
+                                    License Manager
+                                    ]]>
+                                    </AppName>
+                                    <AppTargetMashup>
+                                    <![CDATA[
+                                    Cummins.LicenseManagerMashup
+                                    ]]>
+                                    </AppTargetMashup>
+                                    <AppTooltip>
+                                    <![CDATA[
+                                    Perform License Management Utilities On All Windchill Instances
+                                    ]]>
+                                    </AppTooltip>
+                                </Row>
+                                <Row>
+                                    <Active>true</Active>
+                                    <AppIcon>
+                                    <![CDATA[
+                                    Cummins.BoMComparisonLog0
+                                    ]]>
+                                    </AppIcon>
+                                    <AppName>
+                                    <![CDATA[
+                                    BoM Comparison
+                                    ]]>
+                                    </AppName>
+                                    <AppTargetMashup>
+                                    <![CDATA[
+                                    Cummins.BoMComparisonMashup
+                                    ]]>
+                                    </AppTargetMashup>
+                                    <AppTooltip>
+                                    <![CDATA[
+                                    Compare 2 BoMs
+                                    ]]>
+                                    </AppTooltip>
+                                </Row>
+                            </Rows>
+                        </infoTable>
+                    </Value>
+                    <Timestamp>2025-04-10T12:31:51.556Z</Timestamp>
+                    <Quality>GOOD</Quality>
+                </LandingPageAppsList_V1>
+            </ThingProperties>
+        </Thing>
+    </Things>
+</Entities>
